@@ -7,7 +7,7 @@
 }
 .row-2{
     margin: auto;
-    background-color: darkolivegreen;
+    background-color: darkgreen;
 }  
 .col-1 {
     margin-top: 40px;
@@ -35,6 +35,11 @@ a{
 .row{
     margin: auto;
     background-color: rgba(128, 128, 128, 0.058);
+}
+.new{
+    display: block;
+    text-align: right;
+   font-size: 13px;
 }
 
 

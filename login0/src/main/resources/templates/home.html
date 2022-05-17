@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/home.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>MY BLOG</title>
     <style>
+    	* {
+    		box-sizing: border-box;
+    	}
         .row-1{
     		background-color: white;
 		}
 		.row-2{
-    		background-color: darkolivegreen;
+    		background-color: darkgreen;
 		}  
 		.row-3{
     		background-color: blue;
@@ -34,6 +38,7 @@
     		color: rgba(250, 240, 240, 0.753);
     
 		}
+		a:hover{color:cadetblue}
 		.Welcome{
 		    font-weight: normal;
 		    font-style: italic;
@@ -55,7 +60,11 @@
 		    color: darkgray;
 		    text-indent: 3em;
 		}
-
+		.land{
+		    display: block;
+		    text-align: right;
+		    font-size: 15px;
+		}
     </style>
 </head>
 <body>
@@ -70,6 +79,7 @@
                     <a href="#">照片</a>
                     <a href="..//templates/conten.html">文章</a>
                     <span class="Welcome">Welcome to my world</span>
+                    <a class="land" href="..//templates/login.html">登录</a>
                 </div>
             </div>
         </div>
