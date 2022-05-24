@@ -47,7 +47,7 @@ public class Login0Controller {
 		}
 		return mv;
 	 }
-	@RequestMapping(value = "/registerInfo")
+	@RequestMapping(value = "/registerInfo",method = RequestMethod.GET)
 	public ModelAndView register(@RequestParam("username") String username,@RequestParam("email") String email,@RequestParam("password") String password,
 			ModelAndView mv) {
 		mv.addObject("username",username);
@@ -60,7 +60,7 @@ public class Login0Controller {
 		
 		System.out.println(userInfo1);
 		if(username.equals(userInfo1.getName()) && email.equals(userInfo1.getEmail()) && password.equals(userInfo1.getPassword())) {
-			mv.setViewName("register");
+			mv.setViewName("login");
 		}else {
 			mv.setViewName("fail");
 		}
