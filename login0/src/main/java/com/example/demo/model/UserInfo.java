@@ -15,4 +15,5 @@ public class UserInfo {
 	private Long id;
 	private String name;
 	private String password;
+	private String email;
 }
