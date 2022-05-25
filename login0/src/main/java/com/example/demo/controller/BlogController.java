@@ -42,7 +42,7 @@ public class BlogController {
 		
 		System.out.println(blogInfo1);
 		if(title.equals(blogInfo1.getTitle()) && conten.equals(blogInfo1.getConten())) {
-			mv.setViewName("editor");
+			mv.setViewName("page");
 		}else {
 			mv.setViewName("fail");
 		}

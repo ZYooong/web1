@@ -4,12 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/editor.css">
+  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <title>new blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style>
+    	* {
+    box-sizing: border-box;
+    
+}
+.row-1{
+    background-color: white;
+}
+.row-2{
+    margin: auto;
+    background-color:rgb(191, 234, 126) ;
+}  
+.col-1 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+.nav_title{
+    font-size: 20px;
+    font-weight: bold;
+}
+a{
+    margin-right: 15px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgba(250, 240, 240, 0.753);
+}
+.Welcome{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 10px;
+    margin-left: 30px;
+}
+.row{
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.058);
+}
+input[type=text],textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color:darkolivegreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    margin-right: 30px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   
+  /* 响应式布局 layout - 在屏幕宽度小于 600px 时， 设置为上下堆叠元素 */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+    	
       a{
         margin-right: 15px;
         margin-left: 30px;
@@ -38,7 +125,7 @@
                     <a class="land" href="http://localhost:8080/login">登录/注册</a>
                 </div>
             </div>
-        </div class="title1">
+        <div class="title1">
         <h2>新的MY BLOG</h2>
             <p>来分享喜欢的内容吧</p>
 
@@ -46,18 +133,18 @@
             <form action="/editorInfo" method="get">
                 <div class="row">
                     <div class="col-25">
-                    <label for="fname">标题</label>
+                    <label for="title">标题</label>
                     </div>
                     <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="">
+                    <input type="text" id="title" name="title" placeholder="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                    <label for="subject">请输入内容</label>
+                    <label for="conten">请输入内容</label>
                     </div>
                     <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+                    <textarea id="conten" name="conten" placeholder="" style="height:200px"></textarea>
                     </div>
                 </div>
                 <div class="row">
