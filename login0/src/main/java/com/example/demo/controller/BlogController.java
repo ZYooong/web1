@@ -21,10 +21,13 @@ public class BlogController {
 	public String getBlogView() {
 		return "conten";
 	}
-	
+	@GetMapping("/page")
+	public String getBlog1View() {
+		return "page";
+	}
 
 	@GetMapping("/editor")
-	public String getBlog1View() {
+	public String getBlog2View() {
 		return "editor";
 	}
 	@RequestMapping(value = "/editorInfo",method = RequestMethod.GET)
